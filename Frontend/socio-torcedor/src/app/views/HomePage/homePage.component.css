@@ -1,0 +1,167 @@
+.homePage {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+/* Noticias */
+
+.noticia {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    background-image: linear-gradient(90deg, rgba(14, 51, 70, 0.733), rgba(14, 51, 70, 0.5)), url('./../../shared/imgs/home-page-imgs/backgorund-home-page.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.header p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 30px;
+}
+
+.header p span {
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.texto {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+.numeracao {
+    width: 200px;
+    height: 200px;
+}
+
+.numeracao p {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #0D80BF;
+}
+
+.textoNoticia {
+    width: 50%;
+    height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btnHomePage {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(1, 1, 1, 0.2);
+    text-transform: uppercase;
+    color: #0D80BF;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.btnHomePage:hover {
+    color: #fff;
+}
+
+/* Menu Lateral */
+
+.menuLateral {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 3;
+    background-color: #0A1624;
+}
+
+.logoHomePage {
+    width: 120px;
+    height: 120px;
+    background-image: url(./../../shared/imgs/home-page-imgs/logo-gremio-home-page.png);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    margin: 20px auto 5px auto;
+}
+
+.logo p {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #C9D1D5;
+    margin-bottom: 30px;
+}
+
+/* Navegacao */
+
+.navBarHomePage ul {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.navBarHomePage ul li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 50px;
+    transition: all 0.4s;
+}
+
+.navBarHomePage ul li:hover {
+    border-left: 5px solid #0D80BF;
+    background-image: linear-gradient(90deg, rgba(11, 94, 139, 0.5), rgba(13, 129, 191,));
+}
+
+.navBarHomePage ul li a {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #C9D1D5;
+}
+
+/* Acesso */
+.acesso {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.acesso p {
+    width: 200px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #C9D1D5;
+    margin-top: 60px;
+    transition: all 0.4s;
+}
+
+.acesso p:hover {
+    color: #f3f3f3;
+}

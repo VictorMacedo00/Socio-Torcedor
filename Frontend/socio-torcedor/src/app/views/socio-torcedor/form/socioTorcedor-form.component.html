@@ -1,0 +1,67 @@
+<div class="grid">
+
+  <div class="bannerLateral"></div>
+
+  <div class="containerForm">
+
+    <h1 class="title">Sócio Torcedor</h1>
+
+    <div class="content">
+
+      <div class="text">
+        <h1>Cadastrar novo Sócio</h1>
+      </div>
+  
+      <form [formGroup]="socioForm" class="form" action="submit">
+  
+        <label for="nomeSocio">Nome do Sócio</label>
+        <input placeholder="Insira seu nome aqui" type="text" formControlName="nome" name="nomeSocio" id="nomeSocio" required>
+        <span class="error"></span>
+  
+        <label for="emailSocio">Email</label>
+        <input placeholder="Insira seu email aqui" type="text" formControlName="email" name="emailSocio" id="emailSocio" required>
+        <span class="error"></span>
+  
+        <label for="senhaSocio">Senha</label>
+        <input placeholder="Insira sua senha aqui" type="password" formControlName="senha" name="senhaSocio" id="senhaSocio" required>
+        <span class="error"></span>
+
+        <label for="cpfSocio">CPF</label>
+        <input placeholder="Insira seu cpf aqui" type="text" formControlName="cpf" name="cpfSocio" id="cpfSocio" required>
+        <span class="error"></span>
+
+        <label for="rgrneSocio">RG/RNE</label>
+        <input placeholder="Insira seu RG/RNE aqui" type="text" formControlName="rgrne" name="rgrneSocio" id="rgrneSocio" required>
+        <span class="error"></span>
+
+        <label class="labelLateral" for="dataSocio">Data de Nascimento</label>
+        <input placeholder="Data de nascimento" class="inputLateral" type="text" formControlName="dataNascimento" name="dataSocio" id="dataSocio" required>
+        <span class="error"></span>
+  
+        <label class="labelLateral" for="nacionalidadeSocio">Nacionalidade</label>
+        <select placeholder="Insira sua nacionalidade aqui" class="inputLateral" type="text" formControlName="nacionalidade" name="nacionalidadeSocio" id="nacionalidadeSocio" required>
+          <option value="BR">BR</option>
+        </select>
+        <span class="error"></span>
+
+        <label class="labelLateral" for="estadoEmissorSocio">Estado Emissor</label>
+        <select class="inputLateral" type="text" formControlName="estadoEmissor" name="estadoEmissorSocio" id="estadoEmissorSocio" required>
+          <option value="DF">DF</option>
+          <option value="GO">GO</option>
+          <option value="SP">SP</option>
+          <option value="RJ">RJ</option>
+          <option value="MG">MG</option>
+        </select>
+        <span class="error"></span>
+  
+      </form>
+  
+      <div class="btnControl">
+        <button (click)="onCancel()" class="btn cancel" ><span>< </span>Voltar</button>
+        <button (click)="onSave(socioForm.value)" type="submit" class="btn save">Salvar</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

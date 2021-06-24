@@ -1,0 +1,77 @@
+.btnAdd {
+    width: 300px;
+    height: 40px;
+    margin: 20px 0 0 180px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0D80BF;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.btnAdd:hover {
+    background-color: #08608f;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.table caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.table tr th {
+    width: 200px;
+    height: 50px;
+    font-size: 0.9rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.table tr td {
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn button {
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.editar {
+    background-color: rgb(190, 238, 78);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.editar:hover {
+    background-color: rgb(119, 153, 40);
+}
+
+.deletar {
+    background-color: rgb(253, 80, 80);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.deletar:hover {
+    background-color: rgb(250, 46, 46);
+}

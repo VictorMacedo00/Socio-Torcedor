@@ -1,0 +1,121 @@
+.grid {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.bannerLateral {
+    grid-column: 1 / 2;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(14, 51, 70, 0.733), rgba(14, 51, 70, 0.5)), url(./../../../shared/imgs/form-page/bannerLateral.png);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2 / 3;
+    background-image: linear-gradient(180deg, #0A1624, #0f2236,#0A1624)
+
+}
+
+.title {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.text {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.text h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.form {
+    width: 700px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form input {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 22px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #C9D1D5;
+    outline: none;
+}
+
+.form label {
+    color: #fff;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.inputLateral {
+    min-width: 150px;
+    max-width: 150px;
+    height: 30px;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    outline: none;
+    background-color: #C9D1D5;
+}
+
+.labelLateral {
+    align-self: flex-start;
+    margin-left: 80px;
+    
+}
+
+.btnControl {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+
+.btn {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel {
+    background: none;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: start;
+}
+
+.cancel span {
+    font-weight: bold;
+}
+
+.save {
+    background-color: #C9D1D5;
+    text-transform: uppercase;
+    font-weight: 500;
+}
